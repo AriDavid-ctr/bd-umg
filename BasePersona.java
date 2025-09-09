@@ -24,7 +24,7 @@ public class BasePersona {
     {
           try {
             conn = DriverManager.getConnection(URL, USER, PASSWORD); 
-            System.out.println("✅ Conexión establecida");
+            System.out.println("Conexion establecida");
             return conn;
           }
           catch (Exception ex)
@@ -44,7 +44,7 @@ public class BasePersona {
                 psInsert.setString(3, Apellido);
                 psInsert.setInt(4, edad);
                 psInsert.executeUpdate();
-                System.out.println("✅ Registro insertado");
+                System.out.println("Registro insertado");
                 return true;
             }
         catch (Exception ex)
@@ -102,4 +102,5 @@ public ResultSet BuscarPersona(int id) {
             
     }
     
+
 }
