@@ -252,7 +252,7 @@ public class Control extends javax.swing.JFrame {
 
         int filas = ps.executeUpdate();
         if (filas > 0) {
-            JOptionPane.showMessageDialog(this, "✅ Registro actualizado correctamente");
+            JOptionPane.showMessageDialog(this, " Registro actualizado correctamente");
 
             modelo.setRowCount(0);
             String sqlSelect = "SELECT * FROM persona";
@@ -268,7 +268,7 @@ public class Control extends javax.swing.JFrame {
                 });
             }
         } else {
-            JOptionPane.showMessageDialog(this, "️ No se encontró el ID para actualizar");
+            JOptionPane.showMessageDialog(this, "️ No se encontro el ID para actualizar");
         }
 
     } catch (Exception e) {
